@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrincipalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return "Olá, seja bem-vindo";
-});
+Route::get('/', [PrincipalController::class, 'principal']);
 
 Route::get('/contato', function () {
     return "Olá, seja bem-vindo a página contato!";
