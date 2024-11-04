@@ -16,10 +16,6 @@ use App\Http\Controllers\PrincipalController;
 
 Route::get('/', [PrincipalController::class, 'principal']);
 
-Route::get('/contato', function () {
-    return "Olá, seja bem-vindo a página contato!";
-});
-
-Route::get('/sobre', function () {
-    return "Olá, seja bem-vindo a página sobre!";
+Route::get('/about', function () {
+    return "About us";
 });
